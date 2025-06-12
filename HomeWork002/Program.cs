@@ -10,7 +10,7 @@
             Console.Write("Введите целое число: ");
             if (!int.TryParse(Console.ReadLine(), out value))
             {
-                Console.WriteLine("Ошибка: введено не целое число. Я же просил!");
+                Console.WriteLine("Ошибка: введено не целое число. Я же просил целое!");
                 return;
             }
             if (value % 2 == 0)
@@ -21,6 +21,8 @@
             {
                 Console.WriteLine($"Число {value} является нечетным.");
             }
+
+            Console.WriteLine($"Проверка написания переменной {value}");
 
             Console.ReadKey();
 
