@@ -7,13 +7,8 @@
     {
         static void Main(string[] args)
         {
-            int count = 0;
-            int limit;
-            int evenCount = 0;
-            int oddCount = 0;
-            int sumEven = 0;
-            int sumOdd = 0;
-
+            int count, limit, evenCount = 0, oddCount = 0, sumEven = 0, sumOdd = 0;
+            
             Console.WriteLine("Добро пожаловать в программу которая считает количество четных и нечетных чисел выбранного диапазона");
             Console.WriteLine("Введите число с которого мы начнем отчет");
             if (!int.TryParse(Console.ReadLine(), out count))
@@ -22,14 +17,12 @@
                 return;
             }
             
-            
             Console.WriteLine("Введите лимит для подсчета четных и нечетных чисел");
             if (!int.TryParse(Console.ReadLine(), out limit))
             {
                 Console.WriteLine("Ошибка. Введено некорректное число!");
                 return;
             }
-
 
             while (count <= limit)
             {
