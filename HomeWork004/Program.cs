@@ -2,6 +2,7 @@
 {
 
     // Домашнее задание. Программа, которая будет подсчитывать количество четных и нечетных чисел. Диапазон вводит пользователь.
+    // Добавить сумму нечетных и сумму четных чисел
     internal class Program
     {
         static void Main(string[] args)
@@ -10,6 +11,8 @@
             int limit;
             int evenCount = 0;
             int oddCount = 0;
+            int sumEven = 0;
+            int sumOdd = 0;
 
             Console.WriteLine("Добро пожаловать в программу которая считает количество четных и нечетных чисел выбранного диапазона");
             Console.WriteLine("Введите число с которого мы начнем отчет");
@@ -34,10 +37,12 @@
                 if (count % 2 == 0)
                 {
                     evenCount++;
+                    sumEven += count;
                 }
                 else
                 {
                     oddCount++;
+                    sumOdd += count;
                 }
                 
                 count++;
@@ -45,6 +50,9 @@
 
             Console.WriteLine($"Количество четных чисел: {evenCount}");
             Console.WriteLine($"Количество нечетных чисел: {oddCount}");
+            Console.WriteLine($"Сумма четных чисел: {sumEven}");
+            Console.WriteLine($"Сумма нечетных чисел: {sumOdd}");
+            
         }
     }
 }
