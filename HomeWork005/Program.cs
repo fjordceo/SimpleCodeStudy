@@ -8,8 +8,10 @@ class Program
     {
         char sharp = '#';
         char space = ' ';
+        Console.WriteLine("Введите ширину треугольника");
+        int height = int.Parse(Console.ReadLine());
 
-        for (int i = 1; i < 10; i++)
+        for (int i = 0; i < height; i++)
         {
             for (int j = 0; j < i; j++)
             {
@@ -20,9 +22,9 @@ class Program
 
         Console.WriteLine();
         
-        for (int i = 10; i > 0; i--)
+        for (int i = height; i > 0; i--)
         {
-            for (int j = 1; j < i; j++)
+            for (int j = 0; j < i; j++)
             {
                 Console.Write(sharp);
             }
@@ -31,9 +33,9 @@ class Program
         
         Console.WriteLine();
 
-        for (int i = 1; i < 10; i++)
+        for (int i = 1; i < height; i++)
         {
-            for (int j = 0; j < 10 - i; j++)
+            for (int j = 0; j < height - i; j++)
             {
                 Console.Write(space);
             }
@@ -46,9 +48,9 @@ class Program
 
         Console.WriteLine();
 
-        for (int i = 10; i > 0; i--)
+        for (int i = height; i > 0; i--)
         {
-            for (int j = 0; j < 10 - i; j++)
+            for (int j = 0; j < height - i; j++)
             {
                 Console.Write(space);
             }
@@ -58,13 +60,5 @@ class Program
             }
             Console.WriteLine();
         }
-
-
-
-
-
-
-
-
     }
 }
