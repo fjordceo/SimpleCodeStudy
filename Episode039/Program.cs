@@ -55,8 +55,12 @@ class Program
         }
         
         
+        
         int [] result11 = myArray.Where(i => i < 70).ToArray();
         //Лучше использовать LinQ
+        
+        
+        
         
     }
 }
