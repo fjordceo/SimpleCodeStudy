@@ -41,7 +41,7 @@ class Program
     
     /// <summary>
     /// Возвращает сумму двух чисел типа double.
-    /// </summary>
+    /// </summary> 
     /// <param name="a"></param>
     /// <param name="b"></param>
     /// <returns></returns>
