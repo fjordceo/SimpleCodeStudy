@@ -21,7 +21,7 @@ class Program
         b = -5;
         
         Console.WriteLine("Hello, World!");
-        Console.WriteLine("Hello, World!");
+        
     }
 }
 
