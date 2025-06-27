@@ -4,9 +4,6 @@
      * 3. Написать методы для удаления первого элемента масива, последнего элемента массива и элемента по указанному индексу.
      */
 
-
-
-
 {
     internal class Program
     {
@@ -85,7 +82,7 @@
                     return;
                 }
                 int[] newArray = new int[myArray.Length - 1];
-               
+
                 for (int i = 0, j = 0; i < myArray.Length; i++)
                 {
                     if (i != index)
@@ -100,14 +97,8 @@
                 for (int i = 0; i < myArray.Length; i++)
                 {
                     Console.Write($"{myArray[i]}\t");
-                }
+                }   
             }
-
-
-
-
-
-
         }
     }
 }
