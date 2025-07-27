@@ -22,26 +22,27 @@ class Program
         b = Convert.ToInt32(str);
         
         result = a + b;
+        
+        // Все что складывается со строкой, конвертируется в string!!!
+        Console.WriteLine("Сумма введенных тобой чисел = " + result);
+        Console.WriteLine();
+
+
 
         string strDouble = "1.9";
-        
+
         // Создаем экземпляр класса для определения разделителя
         NumberFormatInfo numberFormatInfo = new NumberFormatInfo()
         {
             NumberDecimalSeparator = ".",
         };
-        
+
         //Аккуратнее с региональными настройками разделителей, используем параметр numberFormatInfo
         double d = Convert.ToDouble(strDouble, numberFormatInfo);
 
-        Console.WriteLine(d);
-        
-        // Все что складывается со строкой, конвертируется в string!!!
-        Console.WriteLine("Сумма введенных тобой чисел = " + result); 
-        
-        
-        
-        
-        
+        Console.WriteLine($"Пробный вывод переменной с разделителем: {d}");
+
+
+
     }
 }

@@ -4,7 +4,7 @@ namespace Episode029;
 
 /*
  * Вложенные циклы (вложенные конструкции). Используются, например, в двумерных или трехмерных массивах
- * Работа с вложеннымии данными в ООП
+ * Работа с вложенными данными в ООП
  */
 
 
@@ -23,16 +23,17 @@ class Program
 
         Console.WriteLine();
 
-        Console.WriteLine("Введите высоту прямоугольника: ");
+        Console.Write("Введите высоту прямоугольника: ");
         int height = int.Parse(Console.ReadLine());
-        Console.WriteLine("Введите ширину прямоугольника: ");
+        Console.Write("Введите ширину прямоугольника: ");
         int width = int.Parse(Console.ReadLine());
+        Console.WriteLine();
         
         for (int a = 0; a < height; a++)
         {
             for (int b = 0; b < width; b++)
             {
-                Console.Write("#");
+                Console.Write("+");
             }
             Console.WriteLine();
         }

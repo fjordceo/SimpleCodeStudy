@@ -11,25 +11,28 @@
             int a = int.Parse(Console.ReadLine());
 
 
-            switch (a)
+            switch (a) 
             {
                 case 1:
+                {
                     Console.WriteLine("Вы выбрали первый вариант");
-                    break;
+                    break; 
+                }
                 case 2:
+                {
                     Console.WriteLine("Вы выбрали второй вариант");
                     break;
+                }
                 case 3:
-                    {   // Можно использовать фигурные скобки для группировки кода
-                        Console.WriteLine("Вы выбрали третий вариант");
-                    }
-
+                { 
+                    Console.WriteLine("Вы выбрали третий вариант");
                     break;
+                }
                 default:
+                {
                     Console.WriteLine("Вы не выбрали ни один из вариантов");
                     break;
-                        
-                        
+                }
             }
 
             // Так же мы можем использовать строковые литералы для switch case
@@ -39,17 +42,23 @@
             string userInput = Console.ReadLine();
 
             
-            switch (userInput)
+            switch (userInput) 
             {
                 case "yes":
+                {
                     Console.WriteLine("Вы ответили 'да'");
-                    break;
+                    break; 
+                }
                 case "no":
+                {
                     Console.WriteLine("Вы ответили 'нет'");
-                    break;
+                    break; 
+                }
                 default:
+                {
                     Console.WriteLine("Вы ввели что-то другое");
-                    break;
+                    break; 
+                }
             }
 
 
@@ -59,19 +68,28 @@
             switch (userKey)
             {
                 case ConsoleKey.A:
+                {
                     Console.WriteLine("Вы нажали клавишу A");
                     break;
+                }
                 case ConsoleKey.B:
+                {
                     Console.WriteLine("Вы нажали клавишу B");
                     break;
+                }
                 case ConsoleKey.C:
+                {
                     Console.WriteLine("Вы нажали клавишу C");
-                    break;
+                    break; 
+                }
                 default:
+                {
                     Console.WriteLine("Вы нажали другую клавишу");
                     break;
-            }          
+                }
+            }
         }
+        
     }
 }
 
